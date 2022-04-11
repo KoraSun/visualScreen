@@ -1,9 +1,45 @@
 @import "../shared/helper";
 
 .home{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     header{
         height:px(99);
         background-size: cover;//把整个div给盖住
+    }
+    main{
+        flex: 1;
+       display: grid;
+       grid-template-areas: 
+       "box1 box2 box4 box5"
+       "box3 box3 box4 box5"
+       ;
+       grid-template-rows: 755fr 363fr;
+       grid-template-columns: 366fr 361fr 811fr 747fr;
+
+
+       > .section1{
+           grid-area: box1;
+           background: pink;
+       }
+       > .section2{
+           grid-area: box2;
+           background: lightblue;
+       }
+       > .section3{
+           grid-area:box3;
+           background:lightgreen;
+       }
+       > .section4{
+           grid-area: box4;
+           background: lightyellow;
+       }
+       > .section5{
+           grid-area: box5;
+           background:grey;
+       }
+    
     }
     
 }

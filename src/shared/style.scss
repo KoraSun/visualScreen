@@ -21,7 +21,14 @@ body {
 }
 #root{
   margin: 0 auto;
-  background-color: #cfe8fb
-  ;
+  background-color: #cfe8fb;
+  display: flex;
+  flex-direction: column;
+
 }//左右居中
 
+.App{
+  display: flex;
+  flex-direction: column;
+  flex:1;
+}
