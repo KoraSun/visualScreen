@@ -1,7 +1,9 @@
 @import "../shared/helper";
-//367 315
-.x{
-    width: px(367);
-    height:px(315);
-    border:1px solid red;
+
+.home{
+    header{
+        height:px(99);
+        background-size: cover;//把整个div给盖住
+    }
+    
 }
