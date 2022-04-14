@@ -10,7 +10,7 @@ export const Chart1 = ()=>{
       console.log(divRef.current)
       var myChart = echarts.init(divRef.current)
       myChart.setOption(createEchartsOptions({
-        ...baseChartOptions,
+       
         xAxis:{
           data:['兰州新区','兰州新区','兰州新区','兰州新区','兰州新区','兰州新区','兰州新区'],
           axisTick:{show:false},

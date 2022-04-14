@@ -9,13 +9,6 @@ export const Chart2 =()=>{
     useEffect(()=>{
       var myChart = echarts.init(divRef.current)
       myChart.setOption(createEchartsOptions({
-        ...baseChartOptions,
-        grid:{
-            x:px(40),
-            y:px(40),
-            x2:px(40),
-            y2:px(40),
-          },
         xAxis: {
             type: 'value',
             boundaryGap: [0, 0.01],
@@ -26,10 +19,14 @@ export const Chart2 =()=>{
         },
         yAxis: {
             type: 'category',
-            data: ['巴西', '印度', '美国', '印尼', '中国', '世界'],
+            data: ['城关区公安局', '七里河区公安局', '西固区公安局', '安宁区公安局', '红古区公安局',
+            '永登县公安局', '皋兰县公安局', '榆中县公安局', '新区公安局'],
             axisTick:{show:false},
             axisLabel:{
-                margin:px(12),
+                margin:px(6),
+                formatter(val){
+                    return val.replace('公安局','\n公安局')
+                }
             },
             axisLine:{
                 show:true,
@@ -40,20 +37,41 @@ export const Chart2 =()=>{
             {
             name: '2011',
             type: 'bar',
-            data: [182, 23, 29, 104, 131, 630]
+            data: [1,2,3,4,5,6,7,8,9],
+            itemStyle:{
+                color:new echarts.graphic.LinearGradient(0,0,1,0,[{
+                    offset:0,
+                    color:'#2034f9'
+                },{
+                    offset:1,
+                    color:'#04a1ff'
+                }]),
+              }
             },
             {
             name: '2012',
             type: 'bar',
-            data: [193, 23, 31, 121, 134, 681]
+            data: [2,3,4,5,6,7,8,9,10],
+            itemStyle:{
+                color:new echarts.graphic.LinearGradient(0,0,1,0,[{
+                    offset:0,
+                    color:'#b22ae8'
+                },{
+                    offset:1,
+                    color:'#6773e7'
+                }]),
+              }
             }
         ],  
       })
       )},[])
     return(
-        <div className="bordered statistics">
+        <div className="bordered rank">
              <h2>案件破获排名</h2>
-             <div ref={divRef} className="chart">
+             <div ref={divRef} className="chart" />
+             <div className="legend">
+                <span className="first" />破获排名1
+                <span className='second'/>破获排名2
              </div>
         </div>
     )
