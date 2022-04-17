@@ -75,6 +75,9 @@
        }
        > .section2{
            grid-area: box2;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
          
        }
        > .section3{
@@ -89,7 +92,7 @@
            grid-area: box5;
            
        }
-       .statistics, .rank, .trend{
+       .statistics, .rank, .trend, .period{
            height: px(315);
            display: flex;
            flex-direction: column;
@@ -133,6 +136,10 @@
        }
        .trend{
            height: px(363);
+       }
+       .period{
+           height:px(363);
+          
        }
       
     } 
