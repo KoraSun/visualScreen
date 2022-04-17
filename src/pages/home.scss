@@ -10,9 +10,24 @@
     > header{
         height:px(99);
         background-size: cover;//把整个div给盖住
+        width: px(2420);
+        //header固定屏幕最大宽度
+        margin: 0 auto;
     }
+    > footer{
+        height: px(68);
+        margin-top: px(20) 0 1px;
+        border-radius: 4px;
+        background: #0c0d2b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }  
     > main{
         flex: 1;
+        width: px(2420);
+        margin: 0 auto;
        display: grid;
        padding-top: px(30);
        grid-template-areas: 
@@ -74,7 +89,7 @@
            grid-area: box5;
            
        }
-       .statistics{
+       .statistics, .rank, .trend{
            height: px(315);
            display: flex;
            flex-direction: column;
@@ -96,25 +111,6 @@
        }
        .rank{
            height: px(423);
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           h2{
-               flex-shrink: 0;
-               border: 1px solid #0a5299;
-               border-bottom-right-radius: 4px;
-               border-bottom-left-radius: 4px;
-               font-size: px(22);
-               line-height: px(24);
-               padding: px(10) px(28);
-               text-shadow: 0 0 px(2) white;
-
-           }
-           .chart{
-               flex: 1;
-               width: 100%;
-              
-           }
            .legend{
                 display: flex;
                 align-items: center;
@@ -125,7 +121,6 @@
                    display: flex;
                    width: px(18);
                    height: px(12);
-                   background: red;
                    margin: 0 px(10);
                }
                 .first{
@@ -136,6 +131,10 @@
                 }
            }
        }
+       .trend{
+           height: px(363);
+       }
       
-    }   
+    } 
+    
 }
