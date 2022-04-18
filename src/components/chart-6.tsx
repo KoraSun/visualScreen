@@ -35,10 +35,10 @@ export const Chart6 =()=>{
                             color:'#00d2fd'
                         }]),
                         borderColor:'#01a7f7',
-                        emphasis:{
-                            label:{color:'white'},
-                            areaColor:'#5470c6'
-                        }
+                    },
+                    emphasis:{
+                        label:{color:'white'},
+                        areaColor:'#5470c6'
                     }
                 },
                 {
@@ -58,10 +58,10 @@ export const Chart6 =()=>{
                             color:'#04dff2'
                         }]),
                         borderColor:'yellow',
-                        emphasis:{
-                            label:{color:'white'},
-                            areaColor:'#5470c6'
-                        }
+                    },
+                    emphasis:{
+                        label:{color:'white'},
+                        areaColor:'#5470c6'
                     }
                 },
                 {
@@ -81,10 +81,10 @@ export const Chart6 =()=>{
                             color:'#ad5efc'
                         }]),
                         borderColor:'#01a7f7',
-                        emphasis:{
-                            label:{color:'white'},
-                            areaColor:'#5470c6'
-                        }
+                    },
+                    emphasis:{
+                        label:{color:'white'},
+                        areaColor:'#5470c6'
                     }
                 },
                 

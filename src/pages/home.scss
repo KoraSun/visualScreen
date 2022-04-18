@@ -86,13 +86,16 @@
        }
        > .section4{
            grid-area: box4;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
           
        }
        > .section5{
            grid-area: box5;
            
        }
-       .statistics, .rank, .trend, .period, .result, .origin{
+       .statistics, .rank, .trend, .period, .result, .origin, .age{
            height: px(315);
            display: flex;
            flex-direction: column;
@@ -110,6 +113,14 @@
            .chart{
             flex: 1;
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            > .age-distributed{
+                flex:1;
+                border: 1px solid red;
+                
+            }
            }
        }
        .rank{
@@ -174,6 +185,53 @@
                    right: px(10);
                }
            }
+       }
+       .age{
+           height: px(373);
+           display: flex;
+           flex-direction: column;
+           >.charts{
+               width: 100%;
+               flex: 1;
+               display: flex;
+               padding: px(30);
+           }
+           &-distributed1, &-distributed2, &-distributed3{
+               flex: 1;
+               display: flex;
+               flex-direction: column;
+           }
+           &-distributed1{
+               .legend{
+                   height: px(40);
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   >span{
+                       display: inline-block;
+                       width: px(40);
+                       height: px(20);
+                       border-radius: px(4);
+                       margin: 0 px(10);
+                   }
+                   .male{
+                       background:  #33a4fa;
+                   }
+                   .female{background:#8c70f4 ;}
+               }
+               .chart{
+                   position: relative;
+                   display: flex;
+                   > .main{
+                       width: 100%;
+                       flex: 1;
+                   }
+                   > .text {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                    color: #33a4fa; font-size: px(40); text-shadow: 0 0 px(20) #33a4fa;font-weight: bold;}
+               }
+           }
+
+          
        }
        .result{
            height: 100%;
