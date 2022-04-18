@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import * as echarts from 'echarts'
-const px =(n) => n/2420 * (window as any).pageWidth
+import { px } from '../shared/px';
 import { createEchartsOptions } from '../shared/create-echarts-options';
 import { color } from 'echarts';
 
