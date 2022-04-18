@@ -230,15 +230,17 @@
                     color: #33a4fa; font-size: px(40); text-shadow: 0 0 px(20) #33a4fa;font-weight: bold;}
                }
            }
-           &-distributed{
+           &-distributed2{
                width: px(290);
                flex-shrink: 0;
                .legend{
                    justify-content: flex-start;
                }
            }
-
-          
+           &-distributed3{
+               border: 1px solid #0d3265;
+               h3 {font-size: px(20); color: #7ab6db; margin-top: px(6);}
+           }   
        }
        .result{
            height: 100%;
