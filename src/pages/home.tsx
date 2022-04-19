@@ -40,7 +40,21 @@ export const Home = () => {
             </div>
           </div>
          </section>
-         <section className="bordered section5"></section>
+         <section className="section5">
+           <div className="row1 bordered type">
+             <h2>案发类型统计</h2>
+             <div className="charts"></div>
+           </div>
+           <div className="row2 bordered street">
+             <h2>案发街道统计</h2>
+             <div className='charts'></div>
+           </div>
+           <div className="row3 bordered method">
+             <h2>作案手段分析</h2>
+           </div>
+
+
+         </section>
        </main>
        <footer>
          koko 2020-{year}
