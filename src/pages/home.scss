@@ -104,7 +104,7 @@
                height: px(317);
            }
            > .row3{
-               height: px(317);
+               height: px(455);
            }
            
        }
@@ -223,6 +223,7 @@
                    align-items: center;
                    justify-content: center;
                    flex-wrap: wrap;
+                   padding-right: px(10);
                    >span{
                        display: inline-block;
                        width: px(16);
@@ -242,7 +243,7 @@
                        flex: 1;
                    }
                    > .text {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-                    color: #33a4fa; font-size: px(40); text-shadow: 0 0 px(20) #33a4fa;font-weight: bold;}
+                    color: #33a4fa; font-size: px(30); text-shadow: 0 0 px(20) #33a4fa;font-weight: bold;}
                }
            }
            &-distributed2{
