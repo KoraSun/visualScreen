@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./home.scss";
 import headerBg from "../images/header.png";
-const px = (n) => (n / 2420) * (window as any).pageWidth;
 import { Chart1 } from "../components/chart-1";
 import { Chart2 } from "../components/chart-2";
 import { Chart3 } from "../components/chart-3";
@@ -13,6 +12,7 @@ import { Chart7 } from "../components/chart-7";
 import { Chart8 } from "../components/chart-8";
 import { Chart10 } from "../components/chart-10";
 import { Chart11 } from "../components/chart-11";
+import { Chart12 } from "../components/chart-12";
 export const Home = () => {
   const year = new Date().getFullYear();
   return (
@@ -51,7 +51,9 @@ export const Home = () => {
           </div>
           <div className="row2 bordered street">
             <h2>案发街道统计</h2>
-            <div className="charts"></div>
+            <div className="charts">
+              <Chart12 />
+            </div>
           </div>
           <div className="row3 bordered method">
             <h2>作案手段分析</h2>
